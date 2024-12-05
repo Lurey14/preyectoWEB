@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/pagina2.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="pagina3.html">
+    <link rel="stylesheet" href="pagina4.html">
+    <link rel="stylesheet" href="login.html">
+</head>
+<body>
+    <!-- header -->
+    <header id="main-header">
+        <nav>
+            <div class="menu-container">
+                <button id="menu-toggle" class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="pagina2.html" class="nav-link">Recetas</a>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <a href="pagina3.html" class="nav-link">Categorías</a>
+                        <ul class="submenu">
+                            <li><a href="receta1.html" class="submenu-link">Pastel</a></li>
+                            <li><a href="#" class="submenu-link">Postres</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="pagina4.html" class="nav-link">Compra</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="login.html" class="nav-link">Registro</a>
+                    </li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar recetas..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <img src="img/logo1.jpg" alt="Logo" class="logo">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="title">
+            FOOD!
+        </div>
+        <div class="images">
+            <div class="item" style="--i: 1">
+                <img src="https://www.pngarts.com/files/10/Food-Items-Download-PNG-Image.png">
+            </div>
+            <div class="item" style="--i: 2">
+                <img src="https://restho-nextjs.vercel.app/assets/images/bg/new-items1.png">
+            </div>
+            <div class="item" style="--i: 3">
+                <img src="https://static.vecteezy.com/system/resources/previews/008/507/708/non_2x/classic-cheeseburger-with-beef-patty-pickles-cheese-tomato-onion-lettuce-and-ketchup-mustard-free-png.png">
+            </div>
+            <div class="item" style="--i: 4">
+                <img src="https://th.bing.com/th/id/R.bf4777d1114c84dfe6f31e5e49889768?rik=zi7Tj%2bggcr2zkg&riu=http%3a%2f%2fsadkhintherapy.com%2fimages%2frecipe2.png&ehk=4T8p%2fECyBUE3fzy8PjWYsx%2ff39xAgkta53bewleeJV4%3d&risl=&pid=ImgRaw&r=0">
+            </div>
+            <div class="item" style="--i: 5">
+                <img src="https://freepngdesign.com/content/uploads/images/sandwich-1760.png">
+            </div>
+            <div class="item" style="--i: 6">
+                <img src="https://pizzaservice-adria.de/wp-content/uploads/2019/05/Pizzaservice-Adria-Landshut-Pizza-Margherita.png">
+            </div>
+        </div>
+        <div class="content">
+            <div class="item active">
+                <h1>PIZZA</h1>
+                <div class="des">
+                    La pizza es un plato hecho con una masa plana, habitualmente circular, elaborada con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que tradicionalmente se cubre con salsa de tomate y mozzarella y se hornea a temperatura alta en un horno de leña. Aunque se considera que su origen está en la gastronomía italiana, específicamente la napolitana, su consumo se extiende a casi todos los países del mundo, donde hay variantes locales que incorporan distintos ingredientes para cubrir la masa.
+                </div>
+            </div>
+            <div class="item">
+                <h1>SANDWICH</h1>
+                <div class="des">
+                    El sándwich, ese apetitoso y versátil bocadillo que ha conquistado paladares alrededor del mundo tiene una historia fascinante que se remonta a siglos atrás. A través del tiempo, ha evolucionado y adaptado a diferentes culturas y gustos, convirtiéndose en un ícono de la gastronomía global.
+                </div>
+            </div>
+            <div class="item">
+                <h1>ENSALADAS</h1>
+                <div class="des">
+                    El vegetarianismo es una forma de alimentarse que excluye los alimentos de origen animal. Sin embargo, y en general, la alimentación vegetariana no sólo se contempla desde el punto de vista alimentario, sino también de estilo de vida. Así, los vegetarianos no sólo rechazan los alimentos de origen animal, sino cualquier producto o material procedente de animales.
+                </div>
+            </div>
+            <div class="item">
+                <h1>HAMBURGUESA</h1>
+                <div class="des">
+                    Una hamburguesa es una especie de bocadillo o tortita que se elabora aglutinando carne picada. Por lo general se le añaden otros ingredientes y se sirve como sándwich (con la carne entre dos trozos de pan). Las hamburguesas más conocidas se realizan con carne vacuna picada que se aplasta. A la carne se le da forma de disco y, a nivel industrial, se le agregan otros ingredientes, como soja y algún aglutinante.
+                </div>
+            </div>
+            <div class="item">
+                <h1>ALITAS DE POLLO</h1>
+                <div class="des">
+                    Las alitas de pollo son un aperitivo esencial en cualquier fiesta y son tan ricos que también se pueden servir como platillo principal. Hay muchas maneras de preparar alitas de pollo.
+                </div>
+            </div>
+            <div class="item">
+                <h1>HAMBURGUESA</h1>
+                <div class="des">
+                    Una hamburguesa es una especie de bocadillo o tortita que se elabora aglutinando carne picada. Por lo general se le añaden otros ingredientes y se sirve como sándwich (con la carne entre dos trozos de pan). Las hamburguesas más conocidas se realizan con carne vacuna picada que se aplasta. A la carne se le da forma de disco y, a nivel industrial, se le agregan otros ingredientes, como soja y algún aglutinante.
+                </div>
+            </div>
+        </div>
+        <button id="prev"></button>
+        <button id="next">></button>
+    </div>
+
+    <!-- seccion1 -->
+     <section class="section1">
+        <div class="section-box">
+            <div id="mu-about-us">
+                <div class="mu-about-us-area">
+                    <div class="mu-title">
+                        <span class="mu-subtitle">DELICIOUS</span>
+                        <h2>Recetas</h2>
+                        <div class="mu-title-bar"></div>
+                    </div>
+                    <div class="mu-about-us-content">
+                        <div class="mu-about-us-left">
+                            <p>Las comidas son aquellos nutrientes en forma de alimentos que se ingieren para sobrevivir. Se conoce como alimentación al proceso que un individuo desarrolla conscientemente para comer y beber estos alimentos, lo que da lugar al mecanismo de la biología que recibe el nombre de nutrición.</p>
+                            <ul>
+                                <li>La gastronomía es importante en cada rincón del mundo debido a que cada plato de comida representa la cultura.</li>
+                                <li>Las comidas principales son el desayuno, el almuerzo y la cena.</li>
+                                <li>La cultura gastronómica es una forma de expresión creativa que nos permite conectar con los alimentos de una manera única.</li>
+                                <li>Entender los tipos de cocina nos deja conocer las distintas formas en que se preparan los alimentos y bebidas en el mundo.</li>
+                            </ul>
+                            <p>Hay muchos libros y artículos sobre la cultura gastronómica que puedes leer para obtener más información y aprender sobre la cultura gastronómica y sus diversos componentes.</p>
+                        </div>
+                        <div class="mu-about-us-right">
+                            <div class="mu-abtus-slider">
+                                <img src="https://images.pexels.com/photos/17939220/pexels-photo-17939220/free-photo-of-chocolate-bombon-postre-fresas.jpeg" alt="About us image 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- separador -->
+    <div id="counter">
+        <div class="counter-overlay">
+            <div class="container">
+                <div class="counter-content">
+                    <ul class="counter-list">
+                        <li class="counter-item">
+                            <div class="counter-box">
+                                <span>Refrescante</span>
+                                <h3><span class="number">55</span><sup>+</sup></h3>
+                                <p>Bebidas saludables.</p>
+                            </div>
+                        </li>
+                        <li class="counter-item">
+                            <div class="counter-box">
+                                <span>Delicioso</span>
+                                <h3><span class="number">130</span><sup>+</sup></h3>
+                                <p>Platillos exquisitos.</p>
+                            </div>
+                        </li>
+                        <li class="counter-item">
+                            <div class="counter-box">
+                                <span>Picantes</span>
+                                <h3><span class="number">35</span><sup>+</sup></h3>
+                                <p>Platos tipicos.</p>
+                            </div>
+                        </li>
+                        <li class="counter-item">
+                            <div class="counter-box">
+                                <span>Satisfechos</span>
+                                <h3><span class="number">3562</span><sup>+</sup></h3>
+                                <p>Clientes.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- menu -->
+    <div id="restaurant-menu">
+        <div class="container">
+            <div class="menu-content">
+                <div class="menu-title">
+                    <span class="subtitle">DELICIOUS</span>
+                    <h2>RECETAS</h2>
+                    <span class="title-bar"></span>
+                </div>
+
+                <div class="menu-tabs">
+                    <ul class="tab-nav">
+                        <li class="active"><a href="#breakfast">Desayunos</a></li>
+                        <li><a href="#meals">Carnes</a></li>
+                        <li><a href="#snacks">Crujientes</a></li>
+                        <li><a href="#desserts">Postres</a></li>
+                        <li><a href="#drinks">Bebidas</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="breakfast">
+                            <div class="menu-section">
+                                <div class="menu-column">
+                                    <ul class="menu-items">
+                                        <li>
+                                            <div class="item-card">
+                                                <div class="item-image">
+                                                    <img src="https://www.celiac.ch-aj.com/images/2017/vipek/baked-goods-1846460_640.jpg" alt="Desayunos">
+                                                </div>
+                                                <div class="item-details">
+                                                    <h4><a href="#">Desayunos Exquisito</a></h4>
+                                                    <span class="price">15 Bs</span>
+                                                    <p>Disfruta de deliciosos desayunos comprando recetas desde 15 BS.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-card">
+                                                <div class="item-image">
+                                                    <img src="https://dollarsplussense.com/wp-content/uploads/2018/08/blur-cake-chocolate-954199-1024x683.jpg" alt="">
+                                                </div>
+                                                <div class="item-details">
+                                                    <h4><a href="#">Postres Deliciosos</a></h4>
+                                                    <span class="price">11 Bs</span>
+                                                    <p>Disfruta de deliciosos postres comprando recetas desde 11 BS.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-card">
+                                                <div class="item-image">
+                                                    <img src="https://www.dietsmealplan.com/wp-content/uploads/2022/07/Fatty-Liver-Diet-Food-to-Eat-and-Avoid-2-1024x683.jpg" alt="">
+                                                </div>
+                                                <div class="item-details">
+                                                    <h4><a href="#">Cenas</a></h4>
+                                                    <span class="price">18</span>
+                                                    <p>Disfruta de deliciosas cenas comprando recetas desde 18 BS.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-card">
+                                                <div class="item-image">
+                                                    <img src="https://www.restoranzaproslave.co.rs/upl/files/slider/slider-2.jpg" alt="">
+                                                </div>
+                                                <div class="item-details">
+                                                    <h4><a href="#">Tipicas</a></h4>
+                                                    <span class="price">15</span>
+                                                    <p>Disfruta de deliciosas comidas tipicas comprando recetas desde 15 BS.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-card">
+                                                <div class="item-image">
+                                                    <img src="https://images.pexels.com/photos/13688593/pexels-photo-13688593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                                </div>
+                                                <div class="item-details">
+                                                    <h4><a href="#">Pasteles</a></h4>
+                                                    <span class="price">20 Bs</span>
+                                                    <p>Disfruta de deliciosos pasteles comprando recetas desde 20 BS.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-card">
+                                                <div class="item-image">
+                                                    <img src="https://images.pexels.com/photos/3728295/pexels-photo-3728295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                                </div>
+                                                <div class="item-details">
+                                                    <h4><a href="#">Bocadillos</a></h4>
+                                                    <span class="price">5 Bs</span>
+                                                    <p>Disfruta de deliciosos bocadillos comprando recetas desde 5 BS.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-column">
+                                    <!-- añadir -->
+                                    <ul class="menu-items">
+                                        <!-- añadir -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- añadir -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- titulo -->
+    <div class="section-title">
+        <h2>Recetas mas populares</h2>
+        <p>Explora las recetas mas populares</p>
+    </div>
+    <!-- recetas populares -->
+    <section class="featured-recipes">
+        <div class="recipe-card">
+            <a href="receta1.html" class="recipe-link">
+                <div class="card-content">
+                    <img src="https://images.pexels.com/photos/140831/pexels-photo-140831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Croissants Caseros" class="card-img">
+                    <h2 class="card-title">Pastel</h2>
+                    <p class="card-text">Un pastel exquisito con el toque perfecto.<br> <br>Tiempo de preparación: 3 horas. <br>Dificultad: Media.</p>
+                    <div class="button-borders">
+                        <button class="primary-button"> Receta
+                        </button>
+                    </div>
+                    <div class="recipe-details">
+                        <span><i class="icon-clock"></i> 3h</span>
+                        <span><i class="icon-people"></i> 8 unidades</span>
+                        <span><i class="icon-star"></i> Media</span>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="receta1.html" class="recipe-link">
+                <div class="card-content">
+                    <img src="https://images.pexels.com/photos/5017828/pexels-photo-5017828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Croissants Rellenos" class="card-img">
+                    <h2 class="card-title">Pizza al horno</h2>
+                    <p class="card-text">Una delciosa pizza al horno.<br><br> Tiempo de preparación: 4 horas. <br>Dificultad: Alta.</p>
+                    <div class="button-borders">
+                        <button class="primary-button"> Receta
+                        </button>
+                    </div>
+                    <div class="recipe-details">
+                        <span><i class="icon-clock"></i> 4h</span>
+                        <span><i class="icon-people"></i> 6 unidades</span>
+                        <span><i class="icon-star"></i> Alta</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="receta1.html" class="recipe-link">
+                <div class="card-content">
+                    <img src="https://images.pexels.com/photos/6202224/pexels-photo-6202224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Croissants Rellenos" class="card-img">
+                    <h2 class="card-title">Croissants Rellenos</h2>
+                    <p class="card-text">Croissants rellenos de chocolate y fresas. Una versión gourmet del clásico francés.<br><br> Tiempo de preparación: 4 horas. <br>Dificultad: Alta.</p>
+                    <div class="button-borders">
+                        <button class="primary-button"> Receta
+                        </button>
+                    </div>
+                    <div class="recipe-details">
+                        <span><i class="icon-clock"></i> 4h</span>
+                        <span><i class="icon-people"></i> 6 unidades</span>
+                        <span><i class="icon-star"></i> Alta</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="receta1.html" class="recipe-link">
+                <div class="card-content">
+                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1g" alt="Croissants Caseros" class="card-img">
+                    <h2 class="card-title">Panqueques</h2>
+                    <p class="card-text">Deliciosos Panqueques suaves.<br> <br>Tiempo de preparación: 3 horas. <br>Dificultad: Media.</p>
+                    <div class="button-borders">
+                        <button class="primary-button"> Receta
+                        </button>
+                    </div>
+                    <div class="recipe-details">
+                        <span><i class="icon-clock"></i> 3h</span>
+                        <span><i class="icon-people"></i> 8 unidades</span>
+                        <span><i class="icon-star"></i> Media</span>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="receta1.html" class="recipe-link">
+                <div class="card-content">
+                    <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Croissants Caseros" class="card-img">
+                    <h2 class="card-title">Ensalada de Frutas</h2>
+                    <p class="card-text">Saludable para cualquier momento.<br> <br>Tiempo de preparación: 3 horas. <br>Dificultad: Media.</p>
+                    <div class="button-borders">
+                        <button class="primary-button"> Receta
+                        </button>
+                    </div>
+                    <div class="recipe-details">
+                        <span><i class="icon-clock"></i> 1h</span>
+                        <span><i class="icon-people"></i> 8 unidades</span>
+                        <span><i class="icon-star"></i> Media</span>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="receta1.html" class="recipe-link">
+                <div class="card-content">
+                    <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Croissants Caseros" class="card-img">
+                    <h2 class="card-title">Almuerzo Familiar</h2>
+                    <p class="card-text">Un almuerzo para compartir en familia.<br> <br>Tiempo de preparación: 3 horas. <br>Dificultad: Media.</p>
+                    <div class="button-borders">
+                        <button class="primary-button"> Receta
+                        </button>
+                    </div>
+                    <div class="recipe-details">
+                        <span><i class="icon-clock"></i> 3h</span>
+                        <span><i class="icon-people"></i> 8 unidades</span>
+                        <span><i class="icon-star"></i> Media</span>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <!-- contacto -->
+    <div class="contact-imfo-box">
+        <div class="container1">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-volume-control-phone"></i>
+                    <div class="overflow-hidden">
+                        <h4>Celular</h4>
+                        <p class="lead">
+                            +591 12345678
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-envelope"></i>
+                    <div class="overflow-hidden">
+                        <h4>Email</h4>
+                        <p class="lead">
+                            delicious@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-map-marker"></i>
+                    <div class="overflow-hidden">
+                        <h4>Localizacion</h4>
+                        <p class="lead">
+                            Recetas virtuales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <!-- 1 -->
+                <div class="col">
+                    <h3>Sobre Nosotros</h3>
+                    <p>Compartir recetas y prepararlas es la mejor manera de vivir una vida saludable y feliz.</p>
+                </div>
+                <!-- 2 -->
+                <div class="col">
+                    <h3>Compras</h3>
+                    <p><span class="text-color">Navidad:</span>Pavo al Horno</p>
+                    <p><span class="text-color">Semana Santa:</span>Aji de Arvejas</p>
+                    <p><span class="text-color">Año Nuevo:</span>Chancho al Horno</p>
+                    <p><span class="text-color">San Juan:</span>Hot Dogs</p>
+                </div>
+                <!-- 3 -->
+                <div class="col">
+                    <h3>Informacion de Contacto</h3>
+                    <p class="lead">Servicio 24 horas para realizar tus comidas.</p>
+                    <p class="lead"><a href="tel:+591 12345678">+591 12345678</a></p>
+                    <p><a href="mail: delicious@gmail.com">delicious@gmail.com</a></p>
+                </div>
+                <!-- 4 -->
+                <div class="col">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Pagina Registrada. &copy; 2024 <a href="#">Delicious Food</a></p>
+        </div>
+    </footer>
+    
+    <script src="js/pagina2.js"></script>
+</body>
+</html>

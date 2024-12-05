@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* header */
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.logo {
+    height: 60px;
+}
+.menu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+.nav-link:hover,
+.nav-link.active {
+    color: #f39c12;
+    border-bottom: 2px solid #f39c12;
+}
+.dropdown .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.dropdown:hover .submenu {
+    display: block;
+}
+.submenu-link {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+.submenu-link:hover {
+    color: #f39c12;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+.menu {
+    display: flex;
+}
+/* Buscador */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search-input {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 2px solid #d0a772;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.search-input:focus {
+    border-color: #f39c12;
+}
+.search-btn {
+    background-color: #d0a772;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-btn:hover {
+    background-color: #f39c12;
+}
+.loader {
+    margin: 20px auto;
+}
+/* responsive menu */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+    }
+    .menu.open {
+        display: flex;
+    }
+    .menu-item {
+        margin: 10px 0;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* contacto */
+.contact-imfo-box {
+    background: url('https://genv.org/wp-content/uploads/2022/06/Recipe-22-Hotcakes-de-avena.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px 0;
+    /* animation: bottomIn 1s ease-in-out forwards; */
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.contact-imfo-box i {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #fff;
+    color: #d0a772;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.contact-imfo-box h4 {
+    margin: 0px;
+    margin-top: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.contact-imfo-box p {
+    margin: 0px;
+    color: #ffffff;
+    font-weight: 300;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.col-md-4 {
+    flex: 1;
+    max-width: 33%;
+    padding: 10px;
+    text-align: left;
+}
+
+/* footer */
+.footer-area {
+    background-color: #010101;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+.footer-area .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-area .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.footer-area .col {
+    flex: 1;
+    min-width: 250px;
+}
+.footer-area h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d0a772;
+    padding-bottom: 5px;
+}
+.footer-area p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.footer-area a {
+    color: #d0a772;
+    text-decoration: none;
+}
+.footer-area a:hover {
+    color: #fff;
+}
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+.submit-btn {
+    background-color: #d0a772;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #fff;
+    color: #d0a772;
+}
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-links li a {
+    color: #fff;
+    font-size: 18px;
+}
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+}
+/* responsive*/
+@media (max-width: 768px) {
+    .footer-area .row {
+        flex-direction: column;
+    }
+
+    .footer-area .col {
+        text-align: center;
+    }
+
+    .form-input {
+        margin: 0 auto 10px;
+    }
+}
+
+/* titulo */
+.section-title {
+    text-align: center;
+    margin: 80px 0;
+    padding: 10px 20px;
+    background: url('https://static1.momsimage.com/wordpress/wp-content/uploads/2022/10/pexels-darko-trajkovi%C4%87-10718224.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Tangerine', cursive;
+}
+.section-title h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.section-title p {
+    font-size: 20px;
+    color: rgb(220, 218, 218);
+    margin: 0;
+}
+
+/* seccion */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 20px auto;
+}
+section {
+    background-image: url(https://images.pexels.com/photos/7640905/pexels-photo-7640905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 428px) {
+    section {
+        height: auto;
+        padding: 50px 0
+    }
+}
+@media screen and (min-width: 429px) and (max-width: 1279px) {
+    section {
+      height: auto;
+      padding: 50px 0
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+    section {
+        height: auto;
+        padding: 50px 0
+    }
+}
+
+/* login */
+.container2{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.container2 p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+.container2 span{
+    font-size: 12px;
+}
+.container2 a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+.container2 button{
+    background: linear-gradient(to right, #585f86, #8c7456);
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container2 button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+.container2 form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+.container2 input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+.container2.active .sign-in{
+    transform: translateX(100%);
+}
+.sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+.container2.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+.social-icons{
+    margin: 20px 0;
+}
+.social-icons a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    /* z-index: 1000; */
+}
+.container2.active .toggle-container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+.toggle{
+    background-color: #585f86;
+    height: 100%;
+    background: linear-gradient(to right, #585f86, #745f44);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+.container2.active .toggle{
+    transform: translateX(50%);
+}
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+.toggle-left{
+    transform: translateX(-200%);
+}
+.container2.active .toggle-left{
+    transform: translateX(0);
+}
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+}
+.container2.active .toggle-right{
+    transform: translateX(200%);
+}

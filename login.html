@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="pagina2.html">
+    <link rel="stylesheet" href="pagina4.html">
+    <link rel="stylesheet" href="pagina3.html">
+</head>
+<body>
+    <!-- header -->
+    <header id="main-header">
+        <nav>
+            <div class="menu-container">
+                <button id="menu-toggle" class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="pagina2.html" class="nav-link">Recetas</a>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <a href="pagina3.html" class="nav-link">Categorías</a>
+                        <ul class="submenu">
+                            <li><a href="receta1.html" class="submenu-link">Pastel</a></li>
+                            <li><a href="#" class="submenu-link">Postres</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="pagina4.html" class="nav-link">Compra</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="login.html" class="nav-link">Registro</a>
+                    </li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar recetas..." class="search-input" id="input1">
+                    <button class="search-btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <img src="img/logo1.jpg" alt="Logo" class="logo">
+            </div>
+        </nav>
+    </header>
+
+    <!-- titulo -->
+    <div class="section-title">
+        <h2>Compra tus recetas favoritas</h2>
+        <p>Explora cada una de las deliciosas comidas que puedes hacer en la comodidad de tu hogar.</p>
+    </div>
+
+    <!-- login -->
+     <section>
+        <div class="container2" id="container2">
+            <div class="form-container sign-up">
+                <form>
+                    <h1>Crea tu Cuenta</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span>puedes usar tu email para registrarte</span>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Registrate</button>
+                </form>
+            </div>
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Iniciar Sesion</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span>usa tu email y contraseña</span>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <button>Iniciar Sesion</button>
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Bienvenido</h1>
+                        <p>Ingresa tus datos para ser parte de nosotros.</p>
+                        <button class="hidden" id="login">Iniciar Sesion</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Bienvenido a Delicious</h1>
+                        <p>Registrate con datos personales para ser parte de nosotros.</p>
+                        <button class="hidden" id="register">Registrate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    
+    <!-- contacto -->
+    <div class="contact-imfo-box">
+        <div class="container1">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-volume-control-phone"></i>
+                    <div class="overflow-hidden">
+                        <h4>Celular</h4>
+                        <p class="lead">
+                            +591 12345678
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-envelope"></i>
+                    <div class="overflow-hidden">
+                        <h4>Email</h4>
+                        <p class="lead">
+                            delicious@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-map-marker"></i>
+                    <div class="overflow-hidden">
+                        <h4>Localizacion</h4>
+                        <p class="lead">
+                            Recetas virtuales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <!-- 1 -->
+                <div class="col">
+                    <h3>Sobre Nosotros</h3>
+                    <p>Compartir recetas y prepararlas es la mejor manera de vivir una vida saludable y feliz.</p>
+                </div>
+                <!-- 2 -->
+                <div class="col">
+                    <h3>Compras</h3>
+                    <p><span class="text-color">Navidad:</span>Pavo al Horno</p>
+                    <p><span class="text-color">Semana Santa:</span>Aji de Arvejas</p>
+                    <p><span class="text-color">Año Nuevo:</span>Chancho al Horno</p>
+                    <p><span class="text-color">San Juan:</span>Hot Dogs</p>
+                </div>
+                <!-- 3 -->
+                <div class="col">
+                    <h3>Informacion de Contacto</h3>
+                    <p class="lead">Servicio 24 horas para realizar tus comidas.</p>
+                    <p class="lead"><a href="tel:+591 12345678">+591 12345678</a></p>
+                    <p><a href="mail: delicious@gmail.com">delicious@gmail.com</a></p>
+                </div>
+                <!-- 4 -->
+                <div class="col">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Pagina Registrada. &copy; 2024 <a href="#">Delicious Food</a></p>
+        </div>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
